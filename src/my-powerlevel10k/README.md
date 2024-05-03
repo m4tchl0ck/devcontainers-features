@@ -1,5 +1,5 @@
 
-# My Powerlevel10
+# My Powerlevel10K (my-powerlevel10k)
 
 
 
@@ -7,9 +7,7 @@
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/color:1": {
-        "version": "latest"
-    }
+    "ghcr.io/m4tchl0ck/my-powerlevel10k/my-powerlevel10k:1": {}
 }
 ```
 
@@ -20,6 +18,7 @@
 
 
 
+
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/color/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/m4tchl0ck/my-powerlevel10k/blob/main/src/my-powerlevel10k/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
