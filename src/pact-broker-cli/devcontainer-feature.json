@@ -1,0 +1,20 @@
+{
+    "name": "Packt Broker cli",
+    "id": "pact-broker-cli",
+    "version": "1.0.1",
+    "description": "",
+    "options": {
+        "pactCliVersion": {
+            "type": "string",
+            "proposals": [
+                "v2.4.2",
+                "v1.7.3"
+            ],
+            "default": "v2.4.2",
+            "description": "Version of https://github.com/pact-foundation/pact-ruby-standalone"
+        }
+    },
+    "containerEnv": {
+        "PATH": "/usr/local/pact/bin:${PATH}"
+    }
+}
