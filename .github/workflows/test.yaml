@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         features:
+          - pact-cli
           - powerlevel10k
-          - pact-broker-cli
         baseImage:
           - mcr.microsoft.com/devcontainers/base:ubuntu
           - mcr.microsoft.com/devcontainers/base:dev-ubuntu

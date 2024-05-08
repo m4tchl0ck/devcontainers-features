@@ -1,7 +1,7 @@
 {
     "name": "My Powerlevel10K",
     "id": "powerlevel10k",
-    "version": "1.0.0",
+    "version": "1.0.10",
     "description": "",
     "options": {},
     "installsAfter": [
