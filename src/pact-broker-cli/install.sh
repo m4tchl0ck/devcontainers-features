@@ -11,6 +11,17 @@ if [ ! -d "$_REMOTE_USER_HOME" ]; then
     exit 1
 fi
 
+export PACT_CLI_VERSION="${PACTCLIVERSION:-"v2.4.2"}"
+echo $PACT_CLI_VERSION
+echo $PACTCLIVERSION
+
+if [ -z "$PACT_CLI_VERSION" ]; then
+    echo "Variable PACT_CLI_VERSION is not set. Please set the version of the Pact CLI to install."
+    exit 1
+fi
+
+echo "Installing Pact-Ruby-Standalone version $PACT_CLI_VERSION"
+
 mkdir -p $_REMOTE_USER_HOME/.local/
 cd /usr/local
-curl -fsSL https://raw.githubusercontent.com/pact-foundation/pact-ruby-standalone/master/install.sh | PACT_CLI_VERSION=v2.4.2 bash
+curl -fsSL https://raw.githubusercontent.com/pact-foundation/pact-ruby-standalone/master/install.sh | bash
