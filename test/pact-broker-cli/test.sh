@@ -13,7 +13,7 @@ source dev-container-features-test-lib
 
 check "pact installed" ls /usr/local/pact/ | grep 'bin'
 check "PATH setup" echo $PATH | grep '/usr/local/pact/bin'
-
+check "pact executes" pact
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
