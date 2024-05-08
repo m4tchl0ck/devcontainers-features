@@ -13,10 +13,10 @@ jobs:
     strategy:
       matrix:
         features:
-          - my-powerlevel10k
+          - powerlevel10k
           - pact-broker-cli
         baseImage:
-          # - mcr.microsoft.com/devcontainers/base:ubuntu
+          - mcr.microsoft.com/devcontainers/base:ubuntu
           - mcr.microsoft.com/devcontainers/base:dev-ubuntu
           - mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye
     steps:

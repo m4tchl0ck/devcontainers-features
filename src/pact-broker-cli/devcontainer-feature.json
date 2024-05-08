@@ -14,9 +14,6 @@
             "description": "Version of https://github.com/pact-foundation/pact-ruby-standalone"
         }
     },
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ],
     "containerEnv": {
         "PATH": "/usr/local/pact/bin:${PATH}"
     }
