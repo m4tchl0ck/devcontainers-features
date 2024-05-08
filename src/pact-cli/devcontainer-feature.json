@@ -1,6 +1,6 @@
 {
-    "name": "Packt Broker cli",
-    "id": "pact-broker-cli",
+    "name": "Packt Cli",
+    "id": "pact-cli",
     "version": "1.0.1",
     "description": "",
     "options": {
