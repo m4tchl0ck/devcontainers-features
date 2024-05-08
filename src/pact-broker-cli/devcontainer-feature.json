@@ -1,0 +1,10 @@
+{
+    "name": "Packt Broker cli",
+    "id": "pact-broker-cli",
+    "version": "1.0.1",
+    "description": "",
+    "options": {},
+    "remoteEnv": {
+        "PATH": "${remoteEnv:HOME}/.local/pact/bin:${remoteEnv:PATH}"
+    }
+}
