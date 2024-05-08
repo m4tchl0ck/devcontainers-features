@@ -12,8 +12,6 @@ if [ ! -d "$_REMOTE_USER_HOME" ]; then
 fi
 
 export PACT_CLI_VERSION="${PACTCLIVERSION:-"v2.4.2"}"
-echo $PACT_CLI_VERSION
-echo $PACTCLIVERSION
 
 if [ -z "$PACT_CLI_VERSION" ]; then
     echo "Variable PACT_CLI_VERSION is not set. Please set the version of the Pact CLI to install."

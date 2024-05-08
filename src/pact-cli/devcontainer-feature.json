@@ -1,6 +1,6 @@
 {
-    "name": "Packt Broker cli",
-    "id": "pact-broker-cli",
+    "name": "Packt Cli",
+    "id": "pact-cli",
     "version": "1.0.1",
     "description": "",
     "options": {
@@ -14,9 +14,6 @@
             "description": "Version of https://github.com/pact-foundation/pact-ruby-standalone"
         }
     },
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ],
     "containerEnv": {
         "PATH": "/usr/local/pact/bin:${PATH}"
     }
