@@ -20,6 +20,5 @@ fi
 
 echo "Installing Pact-Ruby-Standalone version $PACT_CLI_VERSION"
 
-mkdir -p $_REMOTE_USER_HOME/.local/
 cd /usr/local
 curl -fsSL https://raw.githubusercontent.com/pact-foundation/pact-ruby-standalone/master/install.sh | bash
