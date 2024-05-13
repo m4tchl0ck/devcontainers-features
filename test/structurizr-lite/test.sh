@@ -12,6 +12,7 @@ source dev-container-features-test-lib
 # check <LABEL> <cmd> [args...]
 
 check "structurizr-lite script exists" ls /usr/local/structurizr-lite/structurizr-lite | grep 'structurizr-lite'
+check "PATH setup" echo $PATH | grep '/usr/local/structurizr-lite'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
