@@ -1,5 +1,13 @@
 {
     "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+    "runArgs": [
+        "--env-file",
+        "${localEnv:HOME}${localEnv:USERPROFILE}/.env"
+        // "--env-file",
+        // ".devcontainer/defaults.env",
+        // "--env-file",
+        // ".devcontainer/.env"
+      ],
     "customizations": {
         "vscode": {
             "settings": {
@@ -13,16 +21,28 @@
                 ]
             },
             "extensions": [
-                "mads-hartmann.bash-ide-vscode",
-                "pomdtr.markdown-kroki",
+                "jinliming2.vscode-go-template",
                 "github.vscode-github-actions",
                 "github.vscode-pull-request-github",
-                "github.copilot"
+                "github.copilot",
+                "pomdtr.markdown-kroki"
             ]
         }
     },
+    "initializeCommand": {
+        // "createLocalEnv": "touch ${localEnv:HOME}${localEnv:USERPROFILE}/.env",
+        "createLocalHistory":"touch ${localEnv:HOME}${localEnv:USERPROFILE}/.zsh_history.${devcontainerId}"
+    },
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.zsh_history.${devcontainerId},target=/home/vscode/.zsh_history,type=bind"
+    ],
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/rio/features/chezmoi:1": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        // "ghcr.io/m4tchl0ck/devcontainers-features/powerlevel10k:1": {}
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"
