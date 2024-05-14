@@ -17,6 +17,12 @@
 |-----|-----|-----|-----|
 
 
+## Customizations
+
+### VS Code Extensions
+
+- `ciarant.vscode-structurizr`
+
 
 
 ---
