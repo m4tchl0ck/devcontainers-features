@@ -11,7 +11,7 @@ source dev-container-features-test-lib
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
 check "is powerlevel10k downloaded" "ls ~/" | grep 'powerlevel10k'
-check "theme copied" "ls ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme" | grep 'powerlevel10k.zsh-theme'
+check "theme copied" "ls ~/.oh-my-zsh/custom/themes/" | grep 'powerlevel10k.zsh-theme'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
