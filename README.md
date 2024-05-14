@@ -27,5 +27,5 @@ I cannot assure that the features here will remain unaffected by updates and sim
 | Feature                                                      | Description                                                       |
 | ------------------------------------------------------------ | ----------------------------------------------------------------- |
 | [powerlevel10k](src/powerlevel10k/README.md)                 | Another implementation for [powerlevel10k](https://github.com/romkatv/powerlevel10k) - zsh theme |
-| [pact-cli](src/pact-cli/README.md)                           | CLI for [pact](https://pact.io) - a contract tests tool           |
+| [pact-cli](src/pact-cli/README.md)                           | CLI for [pact.io](https://pact.io) - a contract tests tool           |
 | [structurizr-lite](src/structurizr-lite/README.md)           | Installation of [structurizr-lite](https://docs.structurizr.com/lite) - a tool for C4 diagrams    |
