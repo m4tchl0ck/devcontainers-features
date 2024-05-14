@@ -1,8 +1,0 @@
-{
-    "powerlevel10k-installed": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "my-powerlevel10k": {}
-        }
-    }
-}
