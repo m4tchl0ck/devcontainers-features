@@ -1,0 +1,13 @@
+{
+    "name": "structurizr-lite",
+    "id": "structurizr-lite",
+    "version": "1.0.1",
+    "description": "",
+    "options": {},
+    "containerEnv": {
+        "PATH": "/usr/local/structurizr-lite:${PATH}"
+    },    
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/java:1"
+    ]
+}
