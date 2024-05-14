@@ -15,7 +15,9 @@
             "extensions": [
                 "mads-hartmann.bash-ide-vscode",
                 "pomdtr.markdown-kroki",
-                "github.vscode-github-actions"
+                "github.vscode-github-actions",
+                "github.vscode-pull-request-github",
+                "github.copilot"
             ]
         }
     },
