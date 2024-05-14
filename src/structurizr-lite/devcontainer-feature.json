@@ -9,5 +9,12 @@
     },    
     "installsAfter": [
         "ghcr.io/devcontainers/features/java:1"
-    ]
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ciarant.vscode-structurizr"
+            ]
+        }
+    }
 }
